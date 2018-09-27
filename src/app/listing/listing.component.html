@@ -1,0 +1,37 @@
+<div class="container"
+  fxLayout="column"
+  fxLayoutGap="10px">
+  <div fxFlex *ngIf="item">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+            <h3>To-Do Details:</h3>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p matline>
+          <span>Id: {{item.id}}</span>
+        </p>
+        <p matline>
+          <span>Category: {{item.category}}</span>
+        </p>
+        <p matline>
+          <span>Name: {{item.name}}</span>
+        </p>
+        <p matline>
+          <span>Details: {{item.details}}</span>
+        </p>
+        <p matline>
+          <span>Due Date: {{item.duedate | date}}</span>
+        </p>
+        <p matline>
+          <span>Status: {{item.status | uppercase}}</span>
+        </p>
+        <p matline>
+          <span>Notes: {{item.notes}}</span>
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+

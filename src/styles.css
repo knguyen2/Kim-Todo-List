@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* some basic resets */ 
+
+body { 
+  padding: 0; 
+  margin: 0; 
+  font-family: 'Patua One', cursive; 
+}
+.container {
+  margin: 20px;
+  display:flex;
+}
+table, th, td{
+    border-collapse: separate;
+    border-color: rgb(84, 64, 175);
+    border-style: solid;
+    text-align: center;
+}
+th {
+    background: #1a0aad;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 12px 35px;
+    
+}
+table {
+    margin: 50px auto;
+    border: 4px solid #1a0aad;
+}
